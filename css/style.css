@@ -31,6 +31,7 @@ main {
   padding: 10px;
   margin: 10px;
   border: 1px solid black;
+  width: 300%;
 }
 footer {
   background-color: #feeda5;

@@ -139,7 +139,7 @@ button:focus,
     font-size: 22px;
   }
 }
-.main-navigation.page-header_item .li {
+.main-navigation.page-header_item li {
   position: relative;
 }
 .main-navigation.page-header_item a:before,

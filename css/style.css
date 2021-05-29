@@ -4,8 +4,7 @@ header {
  font-weight: 400;
  padding: 10px;
  margin: 10px;
- border: 1px solid black;
- height: 200px;
+ border-bottom: : 1px double black;
 }
 .page-header {
   display: flex;
@@ -19,7 +18,7 @@ header {
   flex-grow: 1;
   text-align: right;
 }
-navigation-list_item--active {
+.navigation-list_item--active {
   text-decoration: none;
 }
 main {
@@ -31,7 +30,6 @@ main {
   padding: 10px;
   margin: 10px;
   border: 1px solid black;
-  width: 300%;
 }
 footer {
   background-color: #feeda5;
@@ -121,11 +119,12 @@ button:focus,
 }
 @media all and (max-width: 500px) {
   .grid {
-    grid-template-columns: 1fr;
-  }}
+    grid-template-columns: 1fr ;
+  }
+}
 @media all and (min-width:500px) and (max-width:750px){
   .grid {
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: 1fr 1fr ;
   }
 }
 @media all and (max-width:750px){

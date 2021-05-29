@@ -139,7 +139,7 @@ button:focus,
     font-size: 22px;
   }
 }
-.main-navigation.page-header_item.li a:before
+.main-navigation.page-header_item .li a:before
 {
   position: relative;
 }
@@ -155,7 +155,6 @@ button:focus,
     opacity: 0;
     transition: all 0.3s;
 }
-
 .main-navigation.page-header_item a:before
 {
     top: 0px;

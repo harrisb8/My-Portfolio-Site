@@ -139,8 +139,8 @@ button:focus,
     font-size: 22px;
   }
 }
-.main-navigation page-header_item a:before,
-.main-navigation page-header_item a:after
+.main-navigation.page-header_item a:before,
+.main-navigation.page-header_item a:after
 {
     position: absolute;
     left: 0px;
@@ -151,18 +151,22 @@ button:focus,
     opacity: 0;
     transition: all 0.3s;
 }
-.main-navigation page-header_item a:before
+.main-navigation.page-header_item.li a:before
+{
+  position: relative;
+}
+.main-navigation.page-header_item a:before
 {
     top: 0px;
     transform:translateY(10px);
 }
-.main-navigation page-header_item a:after
+.main-navigation.page-header_item a:after
 {
     bottom: 0px;
     transform:translateY(-10px);
  }
-.main-navigation page-header_item a:hover:before,
-.main-navigation page-header_item a:hover:after
+.main-navigation.page-header_item a:hover:before,
+.main-navigation.page-header_item a:hover:after
 {
     opacity: 1;
     transform: translateY(0px);

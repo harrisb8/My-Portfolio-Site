@@ -217,6 +217,10 @@ responsive.img {
     transform: translate(200px, 50px);
   }
 }
+.berlin-illustration {
+   margin: 0 auto;
+   display: block;
+}
 
 #delay {
   font-size: 12px;

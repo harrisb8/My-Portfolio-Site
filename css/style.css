@@ -4,8 +4,7 @@ header {
  font-weight: 400;
  padding: 10px;
  margin: 10px;
- border: 1px solid black;
- height: 200px;
+ border-bottom: : 1px double black;
 }
 .page-header {
   display: flex;
@@ -19,7 +18,7 @@ header {
   flex-grow: 1;
   text-align: right;
 }
-navigation-list_item--active {
+.navigation-list_item--active {
   text-decoration: none;
 }
 main {
@@ -106,8 +105,14 @@ button:focus,
   display: inline-block;
   margin-left: 15px;
 }
+@supports (display: grid) {
+  div {
+    display: grid;
+  }
+}
 .grid {
   display: grid;
+  justify-content: center;
   grid-template-columns: 300px 300px 300px;
   grid-template-rows: 300px 300px;
   grid-gap: 20px;
@@ -120,11 +125,12 @@ button:focus,
 }
 @media all and (max-width: 500px) {
   .grid {
-    grid-template-columns: 1fr;
-  }}
+    grid-template-columns: 1fr ;
+  }
+}
 @media all and (min-width:500px) and (max-width:750px){
   .grid {
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: 1fr 1fr ;
   }
 }
 @media all and (max-width:750px){
@@ -139,8 +145,11 @@ button:focus,
     font-size: 22px;
   }
 }
-.main-navigation page-header_item a:before,
-.main-navigation page-header_item a:after
+.main-navigation.page-header_item li {
+  position: relative;
+}
+.main-navigation.page-header_item a:before,
+.main-navigation.page-header_item a:after
 {
     position: absolute;
     left: 0px;
@@ -151,18 +160,18 @@ button:focus,
     opacity: 0;
     transition: all 0.3s;
 }
-.main-navigation page-header_item a:before
+.main-navigation.page-header_item a:before
 {
     top: 0px;
     transform:translateY(10px);
 }
-.main-navigation page-header_item a:after
+.main-navigation.page-header_item a:after
 {
     bottom: 0px;
     transform:translateY(-10px);
  }
-.main-navigation page-header_item a:hover:before,
-.main-navigation page-header_item a:hover:after
+.main-navigation.page-header_item a:hover:before,
+.main-navigation.page-header_item a:hover:after
 {
     opacity: 1;
     transform: translateY(0px);
@@ -212,6 +221,10 @@ responsive.img {
   to {
     transform: translate(200px, 50px);
   }
+}
+.berlin-illustration {
+   margin: 0 auto;
+   display: block;
 }
 
 #delay {
